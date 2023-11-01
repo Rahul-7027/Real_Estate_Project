@@ -1,22 +1,22 @@
 // assets
-import {
-  AppstoreAddOutlined,
-  AntDesignOutlined,
-  BarcodeOutlined,
-  BgColorsOutlined,
-  FontSizeOutlined,
-  LoadingOutlined
-} from '@ant-design/icons';
+// import {
+//   AppstoreAddOutlined,
+//   AntDesignOutlined,
+//   BarcodeOutlined,
+//   BgColorsOutlined,
+//   FontSizeOutlined,
+//   LoadingOutlined
+// } from '@ant-design/icons';
 
 // icons
-const icons = {
-  FontSizeOutlined,
-  BgColorsOutlined,
-  BarcodeOutlined,
-  AntDesignOutlined,
-  LoadingOutlined,
-  AppstoreAddOutlined
-};
+// const icons = {
+//   FontSizeOutlined,
+//   BgColorsOutlined,
+//   BarcodeOutlined,
+//   AntDesignOutlined,
+//   LoadingOutlined,
+//   AppstoreAddOutlined
+// };
 
 // ==============================|| MENU ITEMS - UTILITIES ||============================== //
 
@@ -26,33 +26,45 @@ const utilities = {
   type: 'group',
   children: [
     {
-      id: 'util-typography',
-      title: 'Typography',
+      id: 'util-booking',
+      title: 'Booking',
       type: 'item',
-      url: '/typography',
-      icon: icons.FontSizeOutlined
+      url: '/booking',
+      // icon: icons.FontSizeOutlined
     },
     {
-      id: 'util-color',
-      title: 'Color',
+      id: 'util-builder',
+      title: 'Builder',
       type: 'item',
-      url: '/color',
-      icon: icons.BgColorsOutlined
+      url: '/builder',
+      // icon: icons.BgColorsOutlined
     },
     {
-      id: 'util-shadow',
-      title: 'Shadow',
+      id: 'util-property',
+      title: 'Property Type',
       type: 'item',
-      url: '/shadow',
-      icon: icons.BarcodeOutlined
+      url: '/property',
+      // icon: icons.BarcodeOutlined
     },
     {
-      id: 'ant-icons',
-      title: 'Ant Icons',
+      id: 'util-catergory',
+      title: 'Unit Categroy',
       type: 'item',
-      url: '/icons/ant',
-      icon: icons.AntDesignOutlined,
-      breadcrumbs: false
+      url: '/unitcategory',
+      // icon: icons.FontSizeOutlined
+    },
+    {
+      id: 'util-project',
+      title: 'Projects',
+      type: 'item',
+      url: '/projectdata',
+      // icon: icons.FontSizeOutlined
+    },
+    {
+      id:'util-units',
+      title:"Units",
+      type:"item",
+      url:"/units"
     }
   ]
 };

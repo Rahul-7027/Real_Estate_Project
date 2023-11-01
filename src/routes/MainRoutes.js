@@ -11,10 +11,13 @@ const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
 
 // render - utilities
-const Typography = Loadable(lazy(() => import('pages/components-overview/Typography')));
-const Color = Loadable(lazy(() => import('pages/components-overview/Color')));
-const Shadow = Loadable(lazy(() => import('pages/components-overview/Shadow')));
+const Booking = Loadable(lazy(() => import('pages/components-overview/Booking')));
+const Builder = Loadable(lazy(() => import('pages/components-overview/Builder')));
+const PropertyType = Loadable(lazy(() => import('pages/components-overview/PropertyType')));
 const AntIcons = Loadable(lazy(() => import('pages/components-overview/AntIcons')));
+const UnitCatergory=Loadable(lazy(()=> import ('pages/components-overview/UnitCatergory')))
+const Projects =Loadable(lazy(()=> import('pages/components-overview/ProjectData')))
+const Units=Loadable(lazy(()=>import("pages/components-overview/Units.js")))
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -27,8 +30,8 @@ const MainRoutes = {
       element: <DashboardDefault />
     },
     {
-      path: 'color',
-      element: <Color />
+      path: 'builder',
+      element: <Builder />
     },
     {
       path: 'dashboard',
@@ -44,16 +47,28 @@ const MainRoutes = {
       element: <SamplePage />
     },
     {
-      path: 'shadow',
-      element: <Shadow />
+      path: 'property',
+      element: <PropertyType />
     },
     {
-      path: 'typography',
-      element: <Typography />
+      path: 'booking',
+      element: <Booking />
     },
     {
       path: 'icons/ant',
       element: <AntIcons />
+    },
+    {
+      path:'unitcategory',
+      element:<UnitCatergory/>
+    },
+    {
+      path:'projectdata',
+      element:<Projects/>
+    },
+    {
+      path:'units',
+      element:<Units/>
     }
   ]
 };

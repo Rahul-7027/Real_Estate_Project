@@ -17,8 +17,8 @@ const PropertyType = Loadable(lazy(() => import('pages/components-overview/Prope
 const AntIcons = Loadable(lazy(() => import('pages/components-overview/AntIcons')));
 const UnitCatergory=Loadable(lazy(()=> import ('pages/components-overview/UnitCatergory')))
 const Projects =Loadable(lazy(()=> import('pages/components-overview/ProjectData')))
-const Units=Loadable(lazy(()=>import("pages/components-overview/Units.js")))
-
+const Units=Loadable(lazy(()=>import("pages/components-overview/Units")))
+const Client=Loadable(lazy(()=>import("pages/components-overview/Client")))
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
@@ -69,6 +69,10 @@ const MainRoutes = {
     {
       path:'units',
       element:<Units/>
+    },
+    {
+      path:'client',
+      element:<Client/>
     }
   ]
 };
